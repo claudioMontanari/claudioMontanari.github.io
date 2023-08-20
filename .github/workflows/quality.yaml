@@ -1,13 +1,13 @@
 on:
+  push:
   pull_request:
     types:
-      - closed
+      - opened
     branches:
       - main
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
+  quality:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,4 +17,3 @@ jobs:
       - run: npm install
       - run: npm run test
       - run: npm run build
-      - run: npm run deploy
