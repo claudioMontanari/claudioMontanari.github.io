@@ -1,7 +1,5 @@
 on:
   push:
-    branches:
-      - main
     tags:
       - "v*"
 
@@ -15,8 +13,20 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
+      - name: Get Tag
+        run: echo "RELEASE_VERSION=${GITHUB_REFS#refs/*/}" >> $GITHUB_ENV
       - run: npm install
       - run: npm run test
-      - run: |
+      - name: Deploy website
+        run: |
           git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/$GITHUB_REPOSITORY
           npm run deploy
+      - name: Create release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          prerelease: false
+          automatic_release_tag: ${{ env.RELEASE_VERSION }}
+          repo_token: "${{ secrets.GH_TOKEN }}"
+          title: "${{ env.RELEASE_VERSION }}"
+          files: |
+            build/*
