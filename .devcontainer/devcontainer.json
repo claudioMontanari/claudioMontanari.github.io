@@ -11,7 +11,7 @@
 				"esbenp.prettier-vscode", // Prettier code formatter
 				"bierner.color-info", // JSX and CSS color information
 				"jpoissonnier.vscode-styled-components", // Styled components
-				"cssho.vscode-svgviewer", // SVG viewer
+				"simonsiefke.svg-preview", // SVG viewer
 				"mhutchie.git-graph"
 			],
 			"settings": {
