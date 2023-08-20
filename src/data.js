@@ -27,8 +27,7 @@ export const Blog = <Icon icon="ph:link-bold" />;
  **************************************************************
   Add a second paragraph for the about me section.
 */
-export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, React Bootstrap, Redux, and the GitHub REST API.";
+export const moreInfo = "";
 
 /* Skills
  ************************************************************** 
@@ -37,13 +36,13 @@ export const moreInfo =
 export const skillData = [
   {
     id: 1,
-    skill: <Icon icon="mdi:language-html5" className="display-4" />,
-    name: "HTML5",
+    skill: <Icon icon="teenyicons:python-solid" className="display-4" />,
+    name: "Python",
   },
   {
     id: 2,
-    skill: <Icon icon="ion:logo-css3" className="display-4" />,
-    name: "CSS3",
+    skill: <Icon icon="bxl:java" className="display-4" />,
+    name: "Java",
   },
   {
     id: 3,
@@ -51,45 +50,50 @@ export const skillData = [
     name: "JavaScript",
   },
   {
-    id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
-  },
-  {
-    id: 5,
-    skill: <Icon icon="mdi:react" className="display-4" />,
-    name: "React",
-  },
-  {
-    id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
-    name: "Styled Components",
+    id: 8,
+    skill: <Icon icon="simple-icons:fastapi" className="display-4" />,
+    name: "FastAPI",
   },
   {
     id: 7,
-    skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
-    name: "Redux",
-  },
-  {
-    id: 8,
-    skill: <Icon icon="bi:git" className="display-4" />,
-    name: "Git",
+    skill: <Icon icon="simple-icons:spring" className="display-4" />,
+    name: "Spring",
   },
   {
     id: 9,
-    skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
-    name: "GitHub",
+    skill: <Icon icon="teenyicons:nodejs-solid" className="display-4" />,
+    name: "NodeJS",
+  },
+  {
+    id: 4,
+    skill: <Icon icon="mdi:kubernetes" className="display-4" />,
+    name: "Kubernetes",
+  },
+  {
+    id: 5,
+    skill: <Icon icon="mdi:terraform" className="display-4" />,
+    name: "Terraform",
+  },
+  {
+    id: 6,
+    skill: <Icon icon="mdi:react" className="display-4" />,
+    name: "React",
   },
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = null;
+export const resume =
+  "https://github.com/claudioMontanari/claudioMontanari.github.io/blob/main/src/images/Claudio%20Montanari%20-%20Resume.pdf";
 
 /* Projects
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = [
+  "Lorenzo-Il-Magnifico",
+  "MusicServiceLibrary",
+  "CS494_Cloud_Data_Center_Systems",
+];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 4-5)
 export const projectCardImages = [
@@ -104,4 +108,4 @@ export const projectCardImages = [
   Add your formspree endpoint below.
   https://formspree.io/
 */
-export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
+export const formspreeUrl = "https://formspree.io/f/myyqwzod";
