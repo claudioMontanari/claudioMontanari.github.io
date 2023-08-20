@@ -1,7 +1,7 @@
 {
   "name": "github-react-portfolio-template",
   "homepage": "https://claudioMontanari.github.io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@iconify/react": "^4.1.0",
