@@ -5,11 +5,10 @@ import styled from "styled-components";
 // Icons
 import { Icon } from "@iconify/react";
 // Media
-import Logo from "../images/logo.svg";
+import Logo from "../images/avatar.gif";
 import { Light, Dark } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
-import { Spin } from "./globalStyledComponents";
 import SocialLinks from "./SocialLinks";
 
 const StyledHero = styled.header`
@@ -51,12 +50,6 @@ const StyledHero = styled.header`
 
   .down-container {
     height: 10rem;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .hero-img {
-      animation: ${Spin} infinite 20s linear;
-    }
   }
 
   @media screen and (min-width: 1180px) {
