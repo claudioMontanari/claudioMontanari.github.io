@@ -17,10 +17,12 @@ jobs:
         run: echo "RELEASE_VERSION=${GITHUB_REFS#refs/*/}" >> $GITHUB_ENV
       - run: npm install
       - run: npm run test
-      - name: Deploy website
+      - name: Deploy with gh-pages
         run: |
-          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/$GITHUB_REPOSITORY
-          npm run deploy
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create release
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
@@ -28,5 +30,3 @@ jobs:
           automatic_release_tag: ${{ env.RELEASE_VERSION }}
           repo_token: "${{ secrets.GH_TOKEN }}"
           title: "${{ env.RELEASE_VERSION }}"
-          files: |
-            build/*
