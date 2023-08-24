@@ -1,16 +1,13 @@
 # A React Portfolio Template for GitHub
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/mshuber1981/github-react-portfolio-template?color=%2361dbfb&style=for-the-badge&logo=github)](https://github.com/mshuber1981/github-react-portfolio-template/stargazers/) [![GitHub Repo Forks](https://img.shields.io/github/forks/mshuber1981/github-react-portfolio-template?color=%2361dbfb&style=for-the-badge&logo=github&label=Forks)](https://github.com/mshuber1981/github-react-portfolio-template/network/members)
-
 A performant, accessible, progressive React portfolio template that uses the [GitHub REST API](https://docs.github.com/en/free-pro-team@latest/rest).
 
 Add your GitHub username once and all of your info will automatically be updated. Deploy to GitHub pages in a few simple steps.
 
-## [Live Demo](https://mshuber1981.github.io/github-react-portfolio-template/#/)
+## [Live Website](https://claudioMontanari.github.io)
 
 [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
-![Page Speed](/README_images/speed.png)
 
 ## Light And Dark Themes
 
@@ -18,33 +15,22 @@ Add your GitHub username once and all of your info will automatically be updated
 
 ![Hero Dark](/README_images/heroDark.png)
 
-### Getting Started
+### Development setup
 
-1. [Create a repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
-2. [Clone your repository](https://developers.google.com/speed/pagespeed/insights/)
-3. Make sure [Node](https://nodejs.org/en/) is installed
-4. Open your project and install the dependencies
+1. Make sure to have docker installed as well as VS code
+2. Install the devcontainer extension for VS code
+3. Open the project devcontainer. This will have already nodeJS and the required extensions.
+4. Git precommit hook will run tests and build before allowing you to commit. 
+5. Happy developing!
 
-   ```bash
-   npm install
-   ```
+### Quick util commands
 
-5. Navigate to the src directory and open data.js
-6. Add your GitHub username ([data.js](https://github.com/mshuber1981/github-react-portfolio-template/blob/main/src/data.js#L14) lines 14-18)
+```bash
+$ npm run start      # Start server on port 3000
+$ npm run test       # Run testcases
+$ npm run deploy     # Deploy code
+```
 
-   ```javascript
-   /* START HERE
-   ************************************************************** 
-     Add your GitHub username (string - "YourUsername") below.
-   */
-   export const githubUsername = "Your GitHub username here";
-   ```
-
-7. Start the development server to view the results
-
-   ```bash
-   npm start
-   ```
 
 ### Updating the Projects section
 
