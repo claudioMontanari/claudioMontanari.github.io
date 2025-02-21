@@ -8,13 +8,6 @@ Add your GitHub username once and all of your info will automatically be updated
 
 [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
-
-## Light And Dark Themes
-
-![Hero Light](/README_images/hero.png)
-
-![Hero Dark](/README_images/heroDark.png)
-
 ### Development setup
 
 1. Make sure to have docker installed as well as VS code
