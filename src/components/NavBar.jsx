@@ -9,7 +9,7 @@ import { Icon } from "@iconify/react";
 // Components
 import { Container, Nav, Navbar } from "react-bootstrap";
 // Images
-import Logo from "./defaultNavLogo.svg";
+import Logo from "../images/logo.svg";
 
 // #region styled-components
 const StyledSwitch = styled.label`
