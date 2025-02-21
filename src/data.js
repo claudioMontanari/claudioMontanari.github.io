@@ -22,11 +22,11 @@ export const huggingFaceUrl = "https://huggingface.co/cmontanari";
 export const navLogo = undefined;
 
 // Blog link icon - https://icon-sets.iconify.design/
-export const Blog = <Icon icon="bxl:medium-square" width="2.5em" />;
+export const Blog = <Icon icon="bxl:medium-square" width="1.75em" />;
 export const HuggingFaceIcon = (
-  <Icon icon="logos:hugging-face-icon" width="2em" />
+  <Icon icon="logos:hugging-face-icon" width="1.5em" />
 );
-export const GitHubIcon = <Icon icon="icomoon-free:github" width="2em" />;
+export const GitHubIcon = <Icon icon="icomoon-free:github" width="1.5em" />;
 
 /* About Me
  **************************************************************

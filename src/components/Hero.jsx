@@ -1,13 +1,42 @@
 import { useSelector } from "react-redux";
 import { selectData } from "../pages/homeSlice";
 import { Link } from "react-scroll";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 // Icons
 import { Icon } from "@iconify/react";
 import { Light, Dark } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
 import SocialLinks from "./SocialLinks";
+
+const bounce = keyframes`
+  0%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+`;
+
+// Wrapper for animated social links
+const AnimatedSocialLinks = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .link-icons {
+    font-size: 2rem;
+    display: inline-block;
+    animation: ${bounce} 1.5s infinite;
+  }
+
+  .link-icons:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .link-icons:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .link-icons:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+`;
 
 const StyledHero = styled.header`
   position: relative;
@@ -82,9 +111,9 @@ export default function Hero() {
             <h1 className="mb-3 display-3 title">{name}</h1>
           </Col>
           <Col>
-            <div className="d-flex align-items-center justify-content-center">
-              <SocialLinks />
-            </div>
+            <AnimatedSocialLinks>
+              <SocialLinks minHeight="2em" />
+            </AnimatedSocialLinks>
           </Col>
         </Row>
         <Row className="align-items-end down-container">
