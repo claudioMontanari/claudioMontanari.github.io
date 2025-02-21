@@ -16,12 +16,17 @@ export { HeroDark as Dark };
   Add your GitHub username (string - "YourUsername") below.
 */
 export const githubUsername = "claudioMontanari";
+export const huggingFaceUrl = "https://huggingface.co/cmontanari";
 
 // Navbar Logo image
 export const navLogo = undefined;
 
 // Blog link icon - https://icon-sets.iconify.design/
-export const Blog = <Icon icon="ph:link-bold" />;
+export const Blog = <Icon icon="bxl:medium-square" width="2.5em" />;
+export const HuggingFaceIcon = (
+  <Icon icon="logos:hugging-face-icon" width="2em" />
+);
+export const GitHubIcon = <Icon icon="icomoon-free:github" width="2em" />;
 
 /* About Me
  **************************************************************
