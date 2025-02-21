@@ -91,11 +91,11 @@ a:hover {
     }
 }
 
- @media screen and (min-width: 1367px) {
+@media screen and (min-width: 1367px) {
   .link-icons:hover {
     color: var(--primary);
   }
-  }
+}
 `;
 
 export default GlobalStyles;
